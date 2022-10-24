@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ashev.flowers_calendar.ui.controller.main.MenubarController">
+   <children>
+     <MenuBar fx:id="menubar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity">
+       <menus>
+         <Menu mnemonicParsing="false" text="%fxml.main.menubar.file.title">
+           <items>
+                  <MenuItem fx:id="menuItemLightType" mnemonicParsing="false" text="%fxml.main.menubar.file.lightning_item.title" />
+             <MenuItem fx:id="menuItemExit" mnemonicParsing="false" text="%fxml.main.menubar.file.exit_item.title" />
+           </items>
+         </Menu>
+         <Menu mnemonicParsing="false" text="%fxml.main.menubar.help.title">
+           <items>
+             <MenuItem fx:id="menuItemAbout" mnemonicParsing="false" text="%fxml.main.menubar.help.about_item.title" />
+           </items>
+         </Menu>
+       </menus>
+     </MenuBar>
+   </children>
+</Pane>

@@ -1,0 +1,8 @@
+.dbeaver/
+.settings/
+log/
+target/
+.classpath
+.project
+*.mv.db
+*.log

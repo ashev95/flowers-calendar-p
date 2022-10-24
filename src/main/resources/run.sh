@@ -1,0 +1,1 @@
+${jre.bin.path} -Dprism.order=sw -Dprism.verbose=true -Dfile.encoding=UTF-8 -Dlogback.configurationFile=./settings/logback.xml -Dlogs_dir=./logs -cp /home/ashev/Desktop/flowers-calendar/lib/flowers-calendar-0.0.1-SNAPSHOT.jar:/home/ashev/Desktop/flowers-calendar/lib/*:/home/ashev/Desktop/flowers-calendar/settings/ ashev.flowers_calendar.Main
