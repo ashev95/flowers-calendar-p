@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="no-spring run debug" type="Application" factoryName="Application">
     <option name="MAIN_CLASS_NAME" value="ashev.flowers_calendar.Main" />
-    <module name="flowers-calendar-p" />
-    <option name="VM_PARAMETERS" value="-Dprism.order=sw -Dprism.verbose=true -Dfile.encoding=UTF-8 -Dlogback.configurationFile=./settings/logback.xml -Dlogs_dir=./logs -cp C:\Upwork\ashev95\flowers-calendar\target\flowers-calendar\lib\*;C:\Upwork\ashev95\flowers-calendar\target\flowers-calendar\settings\" />
+    <module name="flowers-calendar" />
+    <option name="VM_PARAMETERS" value="-Dprism.order=sw -Dprism.verbose=true -Dfile.encoding=UTF-8 -Dlogback.configurationFile=./settings/logback.xml -Dlogs_dir=./logs -cp $ProjectFileDir$\target\flowers-calendar\lib\*;$ProjectFileDir$\target\flowers-calendar\settings\" />
     <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/target/flowers-calendar" />
     <method v="2">
       <option name="RunConfigurationTask" enabled="true" run_configuration_name="no-spring package debug" run_configuration_type="MavenRunConfiguration" />

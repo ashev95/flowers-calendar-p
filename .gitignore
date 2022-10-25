@@ -6,3 +6,5 @@ target/
 .project
 *.mv.db
 *.log
+!src/test/resources/test.jpg
+!src/test/resources/tmp
