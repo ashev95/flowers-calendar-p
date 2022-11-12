@@ -13,6 +13,8 @@
 		<db.username>ADMIN</db.username>
 		<db.password>12345</db.password>
 		<hbm2ddl.auto>update</hbm2ddl.auto>
+		<revision.id>0</revision.id>
+		<revision.hash>$2a$10$LRdDiwcmLsG0qmqEfvjHN.fwRKy5l05uU447MAFLO4XsX.m4phvaC</revision.hash>
 	</properties>
 	<profiles>
 		<profile>
@@ -24,6 +26,8 @@
 				<hbm2ddl.auto>none</hbm2ddl.auto>
 				<db.password>Bu8PR2kpFj*AV8qK</db.password>
 				<db.url.creation></db.url.creation>
+				<revision.id>1</revision.id>
+				<revision.hash>$2a$10$byU17zWk8gFEGhWDqDzFJOm6nnUTFTajzQRoIDtq282/7tw3qUXL2</revision.hash>
 			</properties>
 		</profile>
 	</profiles>
@@ -91,9 +95,27 @@
 		    <version>5.9.0</version>
 		    <scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework.security</groupId>
+			<artifactId>spring-security-core</artifactId>
+			<version>5.7.5</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>templating-maven-plugin</artifactId>
+				<version>1.0.0</version>
+				<executions>
+					<execution>
+						<id>filter-src</id>
+						<goals>
+							<goal>filter-sources</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>

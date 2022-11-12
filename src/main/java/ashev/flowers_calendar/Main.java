@@ -32,6 +32,18 @@ public class Main extends Application {
 			log.info("App is started");
 		}
 
+        String revisionId = Version.REVISION_ID;
+        if (log.isInfoEnabled()) {
+            log.info("Revision id: {}", revisionId);
+        }
+
+        if (!Version.checkActivation()) {
+            if (log.isInfoEnabled()) {
+                log.info("Check activation FAILED");
+            }
+            return;
+        }
+
         final ResourceBundle appBundle = ResourceBundle.getBundle("app-bundle" + File.separatorChar + "app", new UTF8Control());
         Singleton.getInstance().setAppBundle(appBundle);
 
